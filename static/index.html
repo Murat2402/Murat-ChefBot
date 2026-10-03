@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şef Murat | Mutfak Danışmanı</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <span class="hat" aria-hidden="true">👨‍🍳</span>
+      <h1>Şef Murat'ın Mutfağı</h1>
+      <p class="tagline">Elindeki malzemeleri söyle, birlikte pratik bir tarif bulalım.</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="chat-card">
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="msg chef">
+          <div class="avatar">👨‍🍳</div>
+          <div class="bubble">
+            <p><strong>Hoş geldin!</strong> Ben Şef Murat. Dolabında neler var? Malzemeleri yaz,
+            sana pratik tarifler hazırlayayım. Mutfakla ilgili her şeyi de sorabilirsin.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="suggestions" id="suggestions">
+        <button type="button" class="chip">Yumurta, domates, peynir var</button>
+        <button type="button" class="chip">Tavuk ve pirinçle ne yapabilirim?</button>
+        <button type="button" class="chip">Makarna nasıl al dente olur?</button>
+      </div>
+
+      <form id="chat-form" class="composer" autocomplete="off">
+        <input id="input" type="text" maxlength="2000"
+               placeholder="Örn: Patates, soğan ve kıyma var..." required>
+        <button id="mic" type="button" class="mic" title="Sesli sor" aria-label="Sesli sor">🎤</button>
+        <button id="send" type="submit">Şefe Sor</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">Aşkla pişir! · Eğitim amaçlı chatbot projesi</footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
